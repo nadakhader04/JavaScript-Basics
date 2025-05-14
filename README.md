@@ -118,7 +118,57 @@ console.log(y); // null
 
 ```
 
+## JavaScript Variables
+JavaScript Variables can be declared in 4 ways:
 
+- **Automatically**
+```javascript
+x = 5;
+y = 6;
+z = x + y;
+```
+- `var`
+```javascript
+var x = 5;
+var y = 6;
+var z = x + y;
+```
+### ⚠️ Important Note:
+**When an element in HTML has an id, it can be accessed directly in JavaScript as a global variable.**
+
+
+
+ The element with id="card" in the HTML becomes a variable in JavaScript (declared automatically with var)
+The value of this variable is the content inside the <div> element
+To update the content, we use the innerHTML property
+```javascript
+<body>
+  <h1>Products</h1>
+  <div id="card">this is div</div>
+</body>
+
+<script>
+  console.log(card); // Prints the <div> element with id "card"
+  card.innerHTML = "updated div"; // Updates the content inside the <div>
+</script>
+
+```
+**❗❗this is not recommended for larger projects.**
+
+
+
+- `let`
+```javascript
+let x = 5;
+let y = 6;
+let z = x + y;
+```
+- `const`
+```javascript
+const x = 5;
+const y = 6;
+const z = x + y;
+```
 
 ## Differences
 
@@ -133,7 +183,7 @@ console.log(y); // null
 
 
 
-## Unary Plus and Minus  Operator
+## Unary Plus and Minus Operator
 - **Plus**
 The unary plus (+) converts an operand into a number, 
 
