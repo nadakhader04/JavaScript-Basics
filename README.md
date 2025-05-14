@@ -8,7 +8,7 @@
 
 The window object represents the browser window or tab. You can also access global functions or variables without explicitly typing window.
 
-```bash
+```javascript
 window.username = 'nada';
 window.alert(username);
 
@@ -19,7 +19,7 @@ window.alert(username);
 It gives you access to the HTML content of the page and allows you to select, modify, create, or remove elements from the DOM (Document Object Model).
 
 
-```bash
+```javascript
 document.getElementById("title").textContent = "Updated Title";
 ```
 
@@ -31,7 +31,7 @@ The console object is used mainly for debugging. It allows to print values, test
 
 ### Console Styling with %c 
 
-```bash
+```javascript
 console.log("%cHi %cGithub", "color: red", "color: blue");
 ```
 
