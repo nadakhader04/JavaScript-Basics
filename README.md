@@ -108,3 +108,13 @@ console.log(y); // null
 
 
 
+## Differences
+
+
+| `Example`               | `var`                              | `let`                                | `const`                             |
+|-------------------------|-------------------------------------|--------------------------------------|-------------------------------------|
+| **Redeclare**           | ✅ `var x = 2; var x = 3;`           | ❌ `let y = 2; let y = 6;` → *Error*  | ❌ `const z = 2; const z = 6;` → *Error* |
+| **Access Before Declare** | 🟡 `console.log(a); var a = 9;` → *undefined* | ❌ `console.log(a); let a = 9;` → *Error* | ❌ `console.log(a); const a = 9;` → *Error* |
+| **Added to window object** | ✅ Yes                           | ❌ No                                 | ❌ No                                 |
+| **Block Scope**         | ❌ No (function scoped)              | ✅ Yes                                | ✅ Yes                                |
+
