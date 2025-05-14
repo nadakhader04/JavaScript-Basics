@@ -1,3 +1,16 @@
+
+## table of contents
+| No                  | Link                            |
+|--------------------------|---------------------------------|
+| 1.             | [Window](#Window) |
+| 2.     | [Document](#document) |
+| 3.         | [Console](#console) |
+| 4.         | [Data Type of JavaScript](#data-type-of-javascript) |
+| 5.         | [JavaScript Variables](#variables) |
+| 6. | [Unary Plus and Minus Operator](#unary-plus-and-minus-operator) |
+
+
+
 ## 📘 JavaScript Basics  
 ### **`window`  `document` `console`**
 
