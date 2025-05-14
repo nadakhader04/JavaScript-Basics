@@ -37,6 +37,10 @@ console.log("%cHi %cGithub", "color: red", "color: blue");
 
 #### %c is a special placeholder in console.log() that tells the browser: The next string argument is a CSS style to apply to the text following me.
 
+"color: red" is applied to "Hi"
+
+"color: blue" is applied to "Github
+
 
 
 ## Data Type of JavaScript 
@@ -101,12 +105,6 @@ let y = null;
 console.log(y); // null
 
 ```
-
-
-
-"color: red" is applied to "Hi"
-
-"color: blue" is applied to "Github
 
 
 
