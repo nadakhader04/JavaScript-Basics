@@ -118,3 +118,34 @@ console.log(y); // null
 | **Added to window object** | ✅ Yes                           | ❌ No                                 | ❌ No                                 |
 | **Block Scope**         | ❌ No (function scoped)              | ✅ Yes                                | ✅ Yes                                |
 
+
+
+
+## Unary Plus and Minus  Operator
+- **Plus**
+The unary plus (+) converts an operand into a number, 
+
+```javascript
+console.log(+4); //4
+console.log(+"4"); //4
+console.log(+"-4"); //-4
+console.log(+"nada"); //NaN
+console.log(+"0xff"); //255
+console.log(+null); //0
+console.log(+false); //0
+console.log(+true); //1
+```
+- **Minus**
+The Unary Negation (-) operator is used to convert its operand to a negative number
+
+
+```javascript
+console.log(-4); //-4
+console.log(-"4"); //-4
+console.log(-"-4"); //-4
+console.log(-"nada"); //NaN
+console.log(-"0xff"); //-255
+console.log(-null); //-0
+console.log(-false); //-0
+console.log(-true); //-1
+```
