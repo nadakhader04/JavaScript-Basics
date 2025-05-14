@@ -1,5 +1,6 @@
+## 📘 JavaScript Basics  
+### **`window`  `document` `console`**
 
-## 📘 JavaScript Basics: window, document, console
 
 
 
@@ -35,6 +36,71 @@ console.log("%cHi %cGithub", "color: red", "color: blue");
 ```
 
 #### %c is a special placeholder in console.log() that tells the browser: The next string argument is a CSS style to apply to the text following me.
+
+
+
+## Data Type of JavaScript 
+
+- String
+
+
+```javascript
+let color = "Yellow";
+let country = 'Tulkarm';
+```
+
+- Number
+```javascript
+let length = 16;
+let weight = 7.5;
+```
+
+- Boolean
+```javascript
+let x = true;
+let y = false;
+```
+
+- Object
+The object data type can contain both **built-in objects**, and **user-defined objects**:
+
+Built-in object types can be:
+
+**objects, arrays, dates, maps, sets, intarrays, floatarrays, promises**, and more.
+```javascript
+const person = {firstName:"Nada", lastName:"Khader"};
+```
+
+- Array -> Object
+```javascript
+const cars = ["Saab", "Volvo", "BMW"];
+let nums = [1, 45, 7];
+```
+
+- null
+```javascript
+console.log(typeof null); //object
+```
+
+- Undefined
+
+```javascript
+console.log(typeof undefined); //undefined
+```
+### ⚠️ Important Notes:
+null is not the same as undefined.
+
+"undefined" means: "the variable was declared but never assigned.
+
+"null" means: "the variable was deliberately set to have no value
+```javascript
+let x;
+console.log(x); // undefined
+
+let y = null;
+console.log(y); // null
+
+```
 
 
 
