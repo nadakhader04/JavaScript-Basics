@@ -8,6 +8,8 @@
 | 4.         | [Data Type of JavaScript](#data-type-of-javascript) |
 | 5.         | [JavaScript Variables](#javascript-variables) |
 | 6. | [Unary Plus and Minus Operator](#unary-plus-and-minus-operator) |
+| 7. | [JavaScript if, else, and else if](#javascript-if-else-and-else-if) |
+
 
 
 ## 📘 JavaScript Basics  
@@ -211,3 +213,51 @@ console.log(-null); //-0
 console.log(-false); //-0
 console.log(-true); //-1
 ```
+
+
+## JavaScript if, else, and else if
+
+#### Syntax
+```syntax
+if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
+```
+
+**💡Example**
+
+If time is less than 10:00, create a "Good morning" greeting, if not, but time is less than 20:00, create a "Good day" greeting, otherwise a "Good evening":
+```javascript
+if (time < 10) 
+  greeting = "Good morning";
+
+else if (time < 20) 
+  greeting = "Good day";
+
+else 
+  greeting = "Good evening";
+
+```
+The result of greeting will be:
+```run
+Good morning
+```
+
+## Ternary Operator
+```syntax
+variable = Expression1 ? ExpressionTrue : ExpressionFalse;
+```
+**💡Example**
+
+Use ternary operator to find the maximum
+```javascript
+    let a = 5;
+    let b = 9;
+    console.log((a > b) ? a : b); // Output: max: 9
+```
+
+
