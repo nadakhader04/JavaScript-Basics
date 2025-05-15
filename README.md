@@ -248,6 +248,8 @@ Good morning
 ```
 
 ## Ternary Operator
+#### Syntax
+
 ```syntax
 variable = Expression1 ? ExpressionTrue : ExpressionFalse;
 ```
