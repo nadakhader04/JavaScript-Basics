@@ -10,6 +10,7 @@
 | 6. | [Unary Plus and Minus Operator](#unary-plus-and-minus-operator) |
 | 7. | [JavaScript if, else, and else if](#javascript-if-else-and-else-if) |
 | 8. | [Ternary Operator](#ternary-operator) |
+| 9. | [ JavaScript Arrays](#javaScript-arrays) |
 
 
 
@@ -264,3 +265,28 @@ Use ternary operator to find the maximum
 ```
 
 
+
+## JavaScript Arrays
+#### Syntax:
+```syntax:
+const array_name = [item1, item2, ...]; 
+```
+#### 💡Example
+```javascript
+const nums = ["ahmad", "ali", "sami", ["hiba", "sara"]];
+console.log(nums[3][0]);    // hiba
+console.log(nums[3][1][2]); // r
+console.log(nums[1]);       // ali
+```
+
+**Array Properties and Methods**
+```javascript
+cars.length   // Returns the number of elements
+cars.sort()   // Sorts the array
+```
+**update the element in the array**
+```javascript
+nums[0] = "hala";
+nums[3] = "nada";
+console.log(nums);  //Output :  ['hala', 'ali', 'sami', 'nada']
+```
