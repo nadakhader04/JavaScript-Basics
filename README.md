@@ -9,6 +9,7 @@
 | 5.         | [JavaScript Variables](#javascript-variables) |
 | 6. | [Unary Plus and Minus Operator](#unary-plus-and-minus-operator) |
 | 7. | [JavaScript if, else, and else if](#javascript-if-else-and-else-if) |
+| 8. | [Ternary Operator](#ternary-operator) |
 
 
 
