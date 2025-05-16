@@ -10,7 +10,10 @@
 | 6. | [Unary Plus and Minus Operator](#unary-plus-and-minus-operator) |
 | 7. | [JavaScript if, else, and else if](#javascript-if-else-and-else-if) |
 | 8. | [Ternary Operator](#ternary-operator) |
-| 9. | [ JavaScript Arrays](#javaScript-arrays) |
+| 9. | [JavaScript Arrays](#javaScript-arrays) |
+| 10. | [JavaScript Loops](#javaScript-loops) |
+| 11. | [JavaScript Functions](#javaScript-functions) |
+
 
 
 
@@ -289,4 +292,130 @@ cars.sort()   // Sorts the array
 nums[0] = "hala";
 nums[3] = "nada";
 console.log(nums);  //Output :  ['hala', 'ali', 'sami', 'nada']
+```
+
+
+## push() and unshift() in JavaScript Arrays:
+
+🔸 **`push(element)`**
+
+Adds an element to the end of the array.
+```javascript
+let arr = [1, 2, 3];
+arr.push(4);
+console.log(arr); // [1, 2, 3, 4]
+```
+
+🔹 **`unshift(element)`**
+
+Adds an element to the beginning of the array.
+
+```javascript
+let arr = [1, 2, 3];
+arr.unshift(0);
+console.log(arr); // [0, 1, 2, 3]
+```
+
+## pop() and shift() in JavaScript Arrays
+
+
+🔸 `pop()`
+
+Removes the last element from the array and returns the removed value:.
+
+```javascript
+let arr = [1, 2, 3];
+let removed = arr.pop();
+console.log(removed); // 3
+```
+
+
+🔹 `shift()`
+
+Removes the first element from the array and returns the removed value:
+
+```javascript
+let arr = [7, 5, 23];
+let removed = arr.shift();
+console.log(removed); // 7
+```
+
+
+
+## JavaScript Loops
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+```
+#### 📚 Resource: 
+[JavaScript For Loop - W3Schools](https://www.w3schools.com/js/js_loop_for.asp)
+
+[JavaScript For In - W3Schools](https://www.w3schools.com/js/js_loop_forin.asp)
+
+[JavaScript For Of - W3Schools](https://www.w3schools.com/js/js_loop_forof.asp)
+
+
+
+## JavaScript Functions
+
+#### - Normal Function (Function Declaration)
+
+
+Syntax
+```syntax
+// Define the function with parameters
+
+    function name(parameter1, parameter2) {
+    // code to be executed
+    }
+
+
+// Call the function with arguments
+    name();
+```
+- you can call it before it's defined
+```javascript
+function calc(...nums){
+    console.log(Array.isArray(nums)); // true 
+
+    int res = 0;
+    for(let i=0; i < nums.length; i++){
+        res += nums[i];
+    }
+
+    return `Final Result Is ${res}`; 
+}
+
+console.log(calc(10,40,20,50,60));  
+
+```
+
+#### - Anonymous Function
+
+An anonymous function is simply a function that does not have a name.
+
+#### Syntax
+
+```syntax
+function() {
+    // Function Body
+ }
+```
+
+You can also use **arrow version** :
+
+```syntax
+( () => {
+    // Function Body...
+} )();
+```
+#### Example
+```javascript
+const greet = () => {
+	console.log("Welcome to JavaScript Basics !");
+}
+    
+greet();
 ```
