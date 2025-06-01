@@ -165,6 +165,15 @@ console.log(y); // null
 ```
 
 ## JavaScript Variables
+
+**JavaScript is a loosely typed**
+You don’t need to declare the data type of a variable and  can hold any type of data, and that type can change at runtime.
+
+```
+let name = 'nada'; // loosely type
+string name = "nada"; // Strongly type like C++
+```
+
 JavaScript Variables can be declared in 4 ways:
 
 - **Automatically**
@@ -179,29 +188,6 @@ var x = 5;
 var y = 6;
 var z = x + y;
 ```
-### ⚠️ Important Note:
-**When an element in HTML has an id, it can be accessed directly in JavaScript as a global variable.**
-
-
-
- The element with id="card" in the HTML becomes a variable in JavaScript (declared automatically with var)
-The value of this variable is the content inside the <div> element
-To update the content, we use the innerHTML property
-```javascript
-<body>
-  <h1>Products</h1>
-  <div id="card">this is div</div>
-</body>
-
-<script>
-  console.log(card); // Prints the <div> element with id "card"
-  card.innerHTML = "updated div"; // Updates the content inside the <div>
-</script>
-
-```
-**❗❗this is not recommended for larger projects.**
-
-
 
 - `let`
 ```javascript
