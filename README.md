@@ -20,9 +20,6 @@
 ## 📘 JavaScript Basics  
 ### **`window`  `document` `console`**
 
-
-
-
 ## Window
 
 The window object represents the browser window or tab. You can also access global functions or variables without explicitly typing window.
@@ -30,17 +27,50 @@ The window object represents the browser window or tab. You can also access glob
 ```javascript
 window.username = 'nada';
 window.alert(username);
-
 ```
+When you have an HTML element with id="header", the browser automatically creates a global variable with the same name as the ID and assigns it to that element — but only if there isn't already a JavaScript variable with that same name.
 
 
+```HTML
+<h1 id="header">Title</h1>
+<script>
+  console.log(header); // <h1 id="header">Title</h1>
+</script>
+```
 ## Document
 It gives you access to the HTML content of the page and allows you to select, modify, create, or remove elements from the DOM (Document Object Model).
 
 
-```javascript
-document.getElementById("title").textContent = "Updated Title";
+```html
+<body>
+    <h1 id="header"></h1>
+    <h2> frontend </h2>
+    <h2> backend </h2>
+    <script src="src/script.js"></script>
+</body>
 ```
+`getElementById`
+
+```javascript
+console.log(document.getElementById("header")); //Output: <h1 id="header"></h1> -> <h2> frontend </h2>
+console.log(header) // Output: <h1 id="header"></h1>
+document.getElementById("header").textContent = "Updated header";
+
+```
+`querySelctor`
+```javascript
+document.querySelector('h2'); // This selects the first <h2> element on the page.
+document.querySelector('#header');  //This selects the element with id="header".
+```
+
+`classlist`
+
+```javascript
+document.querySelector('h2').classList.add('newClass'); // Adds the class newClass to the first <h2> element.
+document.querySelector('h2').classList.remove('newClass'); // Delete the class
+```
+
+
 
 
 ## Console
@@ -56,11 +86,20 @@ console.log("%cHi %cGithub", "color: red", "color: blue");
 
 #### %c is a special placeholder in console.log() that tells the browser: The next string argument is a CSS style to apply to the text following me.
 
+
+
 "color: red" is applied to "Hi"
 
 "color: blue" is applied to "Github
 
 
+```javascript
+console.error("this is error"); //output: ❌ this is error
+```
+
+```javascript
+console.warn("this is warn") //Ouuput: ⚠️ this is warn
+```
 
 ## Data Type of JavaScript 
 
